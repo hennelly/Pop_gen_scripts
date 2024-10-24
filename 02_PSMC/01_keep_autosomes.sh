@@ -16,7 +16,7 @@ BEDIN=/home/crq857/projects/Chapter2/files/chrlist_autosomes.bed
 
 module load bedtools
 
-#bedtools intersect -abam ${BAM} -b ${BEDIN} > ${OUTDIR}/${NAME}_autosomes.bam
+bedtools intersect -abam ${BAM} -b ${BEDIN} > ${OUTDIR}/${NAME}_autosomes.bam
 
 module load samtools
 
