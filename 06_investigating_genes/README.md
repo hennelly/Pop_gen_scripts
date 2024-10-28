@@ -13,7 +13,7 @@
    - 04_persite_depth.sh
      - I inferred per-site depth for areas of interest, like from the Fst and SNpeff analyses where there could be interesting variants. Otherwise, if you know the approximate area of the inversion breakpoints, you could select this region and plot per-site depth to better detect the starting and end points. 
      
-Visualizing reads spanning the structural variants with IGV
+### Visualizing reads spanning the structural variants with IGV
    - IGV takes a BAM input and the reference genome (.fa file) to visualize reads.
    - To extact the region of interest, you can use: 05_extractBAM_for_IGV.sh
    - Now you can use IGV to see exactly where and aspects of the reads that correspond to the structural variant.
