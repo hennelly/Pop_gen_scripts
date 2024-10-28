@@ -10,8 +10,9 @@
 ### Investigating presence of structural variants with per-site depth 
 
 - inferring the per-site depth is helpful for detecting deletions or the starting points of an inversion, in which the reference genome has a certain sequence, and the resequenced individuals mapping to the reference genome do not have reads with those sequences.
-   - 
+   - 04_persite_depth.sh
      - I inferred per-site depth for areas of interest, like from the Fst and SNpeff analyses where there could be interesting variants. Otherwise, if you know the approximate area of the inversion breakpoints, you could select this region and plot per-site depth to better detect the starting and end points. 
      
 Visualizing reads spanning the structural variants with IGV
-   
+   - IGV takes a BAM input and the reference genome (.fa file) to visualize reads.
+   - To extact the region of interest, you can use: 
