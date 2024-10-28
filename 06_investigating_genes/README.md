@@ -2,7 +2,7 @@
 
 ### Investigating per-SNPs differences within selected genes 
  - Extract genes from VCF and filter:
-      - It is 
+      - For my analyses, I kept indels in my VCF to better detect small structural variants, and converted any individual's site that was under 3x as missing (--minDP 3)
  - Per-SNP scan:
 
 ### Investigating presence of structural variants with per-site depth 
