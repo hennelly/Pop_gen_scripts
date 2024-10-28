@@ -15,4 +15,7 @@
      
 Visualizing reads spanning the structural variants with IGV
    - IGV takes a BAM input and the reference genome (.fa file) to visualize reads.
-   - To extact the region of interest, you can use: 
+   - To extact the region of interest, you can use: 05_extractBAM_for_IGV.sh
+   - Now you can use IGV to see exactly where and aspects of the reads that correspond to the structural variant.
+          - For example, with a deletion, often reads are "soft clipped" (if you click on a read, it will tell you if its soft-clipped) where part of the reads maps, and part of it doesn't. In addition, reads may have large insert sizes, which will span the entire deletion as part of the read maps to one side of the reference genome before the deletion, and the other read maps to the other side of the deletion on the reference genome.
+          - I suspect for inversion, you will have something similar. Where part of the read will map to the reference genome right before the starting point of the inversion, and then the reads will be clipped with an abrupt zereo depth after that point. 
