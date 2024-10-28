@@ -6,7 +6,7 @@
  - Per-SNP scan: 02_perSNP_Fst_scan.sh
       - I then looked for which individual sites were in the top 0.01% of all the SNPs I inferred Fst for. I took the top 1% or 0.1% or so to run SNPEff on.
  - Running SNPeff to infer functional impact: 03_runSNPeff.sh
-
+ - You can also explore further interesting regions by doing a window-based fst and dxy scan : 07_fstdxy_10kbwindow.sh
 ### Investigating presence of structural variants with per-site depth 
 
 - inferring the per-site depth is helpful for detecting deletions or the starting points of an inversion, in which the reference genome has a certain sequence, and the resequenced individuals mapping to the reference genome do not have reads with those sequences.
