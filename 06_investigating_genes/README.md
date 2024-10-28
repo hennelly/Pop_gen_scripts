@@ -19,3 +19,7 @@
    - Now you can use IGV to see exactly where and aspects of the reads that correspond to the structural variant.
           - For example, with a deletion, often reads are "soft clipped" (if you click on a read, it will tell you if its soft-clipped) where part of the reads maps, and part of it doesn't. In addition, reads may have large insert sizes, which will span the entire deletion as part of the read maps to one side of the reference genome before the deletion, and the other read maps to the other side of the deletion on the reference genome.
           - I suspect for inversion, you will have something similar. Where part of the read will map to the reference genome right before the starting point of the inversion, and then the reads will be clipped with an abrupt zereo depth after that point. 
+
+## Visualizing the gene in R 
+- This script will plot the gene or region by color coating the reference and alternative alleles: 06_visualize_the_gene.sh
+    - This can be useful to visually see difference in haplotypes 
